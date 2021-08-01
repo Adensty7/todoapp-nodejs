@@ -19,7 +19,7 @@ const dbURI = 'mongodb+srv://adensty:Adensty7@nodejsbasics.ez27e.mongodb.net/tod
 
 // Mongoose fn to connect to database
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
-    .then((result) => app.listen(process.env.port))
+    .then((result) => app.listen(process.env.PORT))
     .catch((err) => console.log(err));
 
 
