@@ -17,7 +17,7 @@ const mongoose = require('mongoose');
 // Connection to MongoDB
 const dbURI = 'mongodb+srv://adensty:Adensty7@nodejsbasics.ez27e.mongodb.net/todoapp?retryWrites=true&w=majority';
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 80;
 
 // Mongoose fn to connect to database
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
