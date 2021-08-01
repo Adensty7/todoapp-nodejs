@@ -37,7 +37,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true}));
 
 app.get('/', (req, res) => {
-    res.send("Random")
+    res.redirect('/todo');
 });
 
 app.use('/todo', todoRoutes);
